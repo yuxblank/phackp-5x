@@ -1,0 +1,27 @@
+{
+  "name": "yuxblank/phackp-5x",
+  "description": "phackp for php 5.6 compatible",
+  "version": "0.1-alpha",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Yuri Blanc",
+      "email": "yuxblank@gmail.com"
+    }
+  ],
+  "require-dev": {
+    "phpdocumentor/phpdocumentor": "2.*"
+  },
+  "require": {
+    "php": ">=5.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "yuxblank\\phackp\\core\\": "src/phackp/core/",
+      "yuxblank\\phackp\\api\\": "src/phackp/api/",
+      "yuxblank\\phackp\\exceptions\\": "src/phackp/exceptions/",
+      "yuxblank\\phackp\\utils\\" : "src/phackp/utils"
+    }
+  }
+}
