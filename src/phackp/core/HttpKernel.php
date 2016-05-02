@@ -160,14 +160,16 @@ final class HttpKernel
 
         switch ($this->getMethod()) {
             case 'GET':
-                if (array_key_exists('params', $route)) {
-                    $this->setParams($route['params']);
-                }
+
                 // get paramets ?name=value
                 if (Application::getConfig()['INJECT_QUERY_STRING']) {
                     $this->setParams($_GET);
                 }
                 break;
+                if (array_key_exists('params', $route)) {
+                    $this->setParams($route['params']);
+                }
+
 
             case 'POST':
                 $this->setParams($_POST);
