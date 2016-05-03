@@ -165,11 +165,11 @@ final class HttpKernel
                 if (Application::getConfig()['INJECT_QUERY_STRING']) {
                     $this->setParams($_GET);
                 }
-                break;
+
                 if (array_key_exists('params', $route)) {
                     $this->setParams($route['params']);
                 }
-
+                break;
 
             case 'POST':
                 $this->setParams($_POST);
