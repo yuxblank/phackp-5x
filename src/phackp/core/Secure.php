@@ -25,7 +25,7 @@ namespace yuxblank\phackp\core;
  * @author yuri.blanc
  */
 class Secure extends Controller {
-    private static $cripto;
+    private  $cripto;
     public function __construct() {
         parent::__construct();
     }
